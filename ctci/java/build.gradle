@@ -1,0 +1,32 @@
+plugins {
+    id 'net.ltgt.apt' version '0.10'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'linkedlist.LLApplication'
+
+repositories {
+	mavenCentral()
+}
+
+jar {
+  baseName = 'varmas-ctci'
+  version = '0.0.1'
+}
+
+dependencies {
+	compileOnly 'org.projectlombok:lombok:1.16.20'
+  compile 'org.slf4j:slf4j-api:1.7.12'
+  testCompile 'junit:junit:4.12'
+	apt "org.projectlombok:lombok:1.16.20"
+}
+
+test {
+	//we want display the following test events
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED"
+    }
+}
