@@ -4,6 +4,8 @@ Note: Inspired from [John Washam, SDE @ Amazon](https://github.com/jwasham/codin
 
 #### Must Reads
   - [ ] [Retaining CS Knowledge](https://startupnextdoor.com/retaining-computer-science-knowledge/)
+  - [ ] [Finding Solutions](https://www.topcoder.com/community/data-science/data-science-tutorials/how-to-find-a-solution/)
+  - [ ] [Algorithm Design Canvas](https://www.hiredintech.com/classrooms/algorithm-design/lesson/77)
 
 #### Refreshers
   - [ ] [CodingBat](http://codingbat.com)
