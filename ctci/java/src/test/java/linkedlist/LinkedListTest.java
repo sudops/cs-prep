@@ -27,8 +27,20 @@ public class LinkedListTest {
     ll.add(new Node(1));
     ll.add(new Node(2));
     assertEquals(
-      ll.getHead().getNext().getData(),
-      2
+      2,
+      ll.getHead().getNext().getData()
     );
+  }
+
+  @Test
+  public void when2NodesInLinkedList_returnsSize2() {
+    LinkedList ll = new LinkedList(0, 1);
+    assertEquals(2, ll.size());
+  }
+
+  @Test
+  public void whenNodeNodes_returnsSize0() {
+    LinkedList ll = new LinkedList();
+    assertEquals(0, ll.size());
   }
 }
